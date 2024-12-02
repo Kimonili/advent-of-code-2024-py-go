@@ -90,5 +90,5 @@ func CalculateTimesInList(ls []int, num int) int {
 			count++
 		}
 	}
-	return count * num
+	return count
 }
