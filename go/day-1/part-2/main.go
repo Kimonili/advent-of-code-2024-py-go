@@ -14,7 +14,9 @@ func main() {
 	// Iterate over the second list
 	for i, num1 := range list1 {
 
-		simScore := utils.CalculateTimesInList(list2, num1)
+		timesInList := utils.CalculateTimesInList(list2, num1)
+
+		simScore := timesInList * num1
 
 		similarityList[i] = simScore
 	}
