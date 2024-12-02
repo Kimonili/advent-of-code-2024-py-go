@@ -82,3 +82,13 @@ func Abs(x int) int {
 	}
 	return x
 }
+
+func CalculateTimesInList(ls []int, num int) int {
+	count := 0
+	for _, n := range ls {
+		if n == num {
+			count++
+		}
+	}
+	return count * num
+}
